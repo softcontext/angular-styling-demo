@@ -1,0 +1,23 @@
+/*
+  <song-track1>
+ */
+:host {
+  margin: 15px;
+  color: black;
+  display: inline-block;
+}
+
+/*
+  <song-track1 class="selected">
+ */
+:host(.selected) .container {
+  box-shadow: 0px 0px 16px grey;
+}
+
+/*
+  shadow DOM 및 Light DOM에서 모두 작동한다.
+  /deep/ 설정은 deprecated가 예고 되었고 대신 >>> 연산자를 사용할 수 있다.
+ */
+:host /deep/ h4 {
+  color: silver;
+}

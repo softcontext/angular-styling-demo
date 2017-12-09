@@ -1,0 +1,32 @@
+:host>>>.container {
+  padding: 10px;
+  background-color: #1c1c1c;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  cursor: hand;
+}
+
+:host>>>.container:hover {
+  background-color: #5d5d5d;
+}
+
+:host>>>.cover-img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  overflow: hidden;
+}
+
+:host>>>.track-information {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  line-height: 5px;
+  display: inline-block;
+}
+
+:host>>>.cover-art {
+  width: 200px;
+  height: 200px;
+}

@@ -1,0 +1,17 @@
+:host {
+  margin: 15px;
+  color: black;
+  display: inline-block;
+}
+
+:host(.selected) .container {
+  box-shadow: 0px 0px 16px grey;
+}
+
+:host /deep/ h4 {
+  color: white;
+}
+
+.container {
+  color: magenta;
+}

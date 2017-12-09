@@ -1,0 +1,21 @@
+<div>
+  <song-track1 [ngClass]="{'selected': selected}" track="Track 1" artist="Artist 1"></song-track1>
+
+  <song-track2 [ngClass]="{'selected': selected}">
+    <track-image image="./assets/img/black_pink.jpg"></track-image>
+    <track-title>Track 2</track-title>
+    <track-artist>Artist 2</track-artist>
+  </song-track2>
+
+  <song-track3 [ngClass]="{'selected': selected}" track="Track 3" artist="Artist 3"
+    image="./assets/img/black_pink.jpg"></song-track3>
+
+  <song-track4 [ngClass]="{'selected': selected}" track="Track 4" artist="Artist 4"
+    image="./assets/img/black_pink.jpg"></song-track4>
+
+  <hr>
+
+  <div class="actions">
+    <button (click)="selected=!selected">Toogle All</button>
+  </div>
+</div>
